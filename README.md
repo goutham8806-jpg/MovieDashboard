@@ -1,91 +1,121 @@
-# 🎬 Movie Data Analysis Project
+🎬 Movie Data Analysis Project
 
-## Project Overview
-This project is a mini Data Analyst portfolio project built in Jupyter Notebook.  
-It involves scraping movie data from online sources, cleaning it, performing exploratory data analysis (EDA), and visualizing insights such as top movies, distributors, and trends.  
+A complete data analysis workflow built in Python & Jupyter Notebook — featuring web scraping, data cleaning, exploratory data analysis (EDA), and visual reporting.
 
-The project demonstrates skills in **web scraping, data cleaning, analysis, and visualization** — perfect for showcasing in a GitHub portfolio.
+This project demonstrates real-world data analyst skills including web scraping, data wrangling, visualization, and trend analysis.
 
----
+🛠 Tools & Technologies
 
-## 🛠 Tools Used
-- Python
-- Jupyter Notebook
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- BeautifulSoup
-- Requests
-- WordCloud (Optional)
+Python
 
----
+Jupyter Notebook
 
-## 📋 Steps Followed
-1. **Web Scraping**
-   - Fetched movie tables from online sources using `requests` and `BeautifulSoup`.
-   - Parsed HTML tables and extracted movie details like title, distributor, domestic gross, production company, cast & crew.
+Pandas, NumPy
 
-2. **Data Cleaning**
-   - Removed duplicates and missing values.
-   - Formatted columns like `Domestic gross` to numeric for analysis.
+Matplotlib, Seaborn
 
-3. **Exploratory Data Analysis (EDA)**
-   - Top 10 movies by domestic gross.
-   - Top distributors and production companies.
-   - Trends over months/quarters.
+BeautifulSoup, Requests
 
-4. **Visualizations**
-   - Bar charts for top movies & distributors.
-   - Pie charts for distribution of production companies.
-   - Optional: Word Cloud of movie titles.
+WordCloud (optional)
 
-5. **Insights & Conclusions**
-   - Key patterns in movie revenue, distributor performance, and popular genres.
+📋 Project Workflow
+1. Web Scraping
 
----
+Using requests and BeautifulSoup, extracted movie data such as:
 
-## 📊 Sample Visualizations
+Title
 
-### 1. Top 10 Movies by Domestic Gross
-![Top 10 Movies](visuals/top10_movies.png)
+Distributor
 
-### 2. Revenue Distribution by Distributor
-![Distributor Revenue](visuals/distributor_revenue.png)
+Domestic Gross
 
-### 3. Production Company Contributions
-![Production Companies](visuals/production_companies.png)
+Opening
 
-### 4. Word Cloud of Movie Titles (Optional)
-![Movie Word Cloud](visuals/movie_wordcloud.png)
+Production Company
 
-> *You can add your own screenshots or exported images from Matplotlib/Seaborn/WordCloud to the `visuals/` folder.*
+Cast & Crew
 
----
+2. Data Cleaning
 
-## 📝 Additional Documentation
+Removed missing values & duplicates
 
-### Data Dictionary
-| Column Name         | Description |
-|--------------------|-------------|
-| Rank               | Rank of the movie based on domestic gross |
-| Title              | Name of the movie |
-| Distributor        | Company distributing the movie |
-| Domestic gross     | Domestic box office revenue (USD) |
-| Opening            | Opening date |
-| Production company | Movie production companies |
-| Cast and crew      | Key cast and crew members |
-| Ref                | Reference link or note |
+Standardized column names
 
-### Key Insights
-- The top distributors dominate box office revenue.
-- Certain production companies consistently release high-grossing movies.
-- Trends over months show peak releases during holiday seasons.
+Converted Domestic gross from string → numeric
 
----
+Cleaned production company and distributor fields
 
-## 🚀 How to Run the Notebook
-1. Clone the repository:
+3. Exploratory Data Analysis (EDA)
 
-```bash
+Analyzed patterns and trends:
+
+Top 10 movies by domestic gross
+
+Revenue share of distributors
+
+Most frequent production companies
+
+Seasonal/quarterly revenue variations
+
+4. Visualizations
+
+Bar chart: Top movies
+
+Pie chart: Production company share
+
+Distribution charts for distributors
+
+Word Cloud of movie titles (optional)
+
+📊 Sample Visuals
+
+Top 10 Movies by Domestic Gross
+visuals/top10_movies.png
+
+Distributor Revenue Share
+visuals/distributor_revenue.png
+
+Production Company Breakdown
+visuals/production_companies.png
+
+Movie Title Word Cloud
+visuals/movie_wordcloud.png
+
+Add your exported images inside the visuals/ folder.
+
+📝 Data Dictionary
+Column	Description
+Rank	Rank based on domestic gross
+Title	Movie title
+Distributor	Release distribution company
+Domestic gross	Total domestic revenue (USD)
+Opening	Opening date or weekend
+Production company	Company producing the film
+Cast and crew	List of actors/directors
+Ref	Reference source
+🚀 How to Run This Notebook
+
+Clone the repository:
+
 git clone https://github.com/YOUR_USERNAME/movie-data-analysis.git
+
+
+Install required libraries:
+
+pip install pandas numpy matplotlib seaborn requests beautifulsoup4 wordcloud
+
+
+Open Jupyter Notebook:
+
+jupyter notebook
+
+
+Run the notebook step-by-step.
+
+🎯 Key Insights
+
+Top distributors account for most of the box office revenue.
+
+Major production companies consistently release high-grossing movies.
+
+Revenue spikes during holiday months and festival seasons.
