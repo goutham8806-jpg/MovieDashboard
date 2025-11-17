@@ -97,7 +97,7 @@ Ref	Reference source
 
 Clone the repository:
 
-git clone https://github.com/YOUR_USERNAME/movie-data-analysis.git
+git clone ![](https://github.com/goutham8806-jpg/MovieDashboard)
 
 
 Install required libraries:
